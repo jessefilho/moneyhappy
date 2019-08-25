@@ -49,7 +49,7 @@ CREATE TABLE public.bli
 select * from bli
 
 
---JOIN
+--JOIN TABLES
 
 select w.country, w.y2017, w.y2018, w.y2019, b.life_satisfaction
 from weo w
@@ -57,3 +57,4 @@ left join bli b
 on w.country = b.country
 where b.life_satisfaction is not null
 order by b.life_satisfaction desc
+
